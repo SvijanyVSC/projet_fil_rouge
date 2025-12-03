@@ -1,0 +1,559 @@
+
+/* POLICES           */
+@font-face {
+  font-family: "Nulshock";
+  src: url("./polices/Nulshock Bd.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./polices/Roboto-Medium.ttf");
+}
+
+/* VARIABLES         */
+:root {
+  --txt-color: #FCCA1A;
+  --primary-color: #02161C;
+  --secondary-color: #205A3B;
+  --Nulshock: "Nulshock", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+}
+
+/* GENERAL         */
+body {
+  background-color: var(--primary-color);
+}
+
+h3,
+p {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--Nulshock);
+  font-size: 24px;
+  padding: 20px;
+}
+
+p {
+  font-family: var(--Roboto);
+  font-size: 18px;
+}
+
+span {
+  font-weight: bold;
+  color: var(--txt-color);
+}
+
+a,
+button {
+  font-family: var(--Roboto);
+  color: var(--txt-color);
+  text-decoration: none;
+}
+
+/* HEADER */
+.main_container_header {
+  background-color: var(--primary-color);
+}
+
+.container_header {
+  display: flex;
+  gap: 200px;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  border: solid 10px var(--secondary-color);
+  box-shadow: 4px 4px 20px var(--secondary-color);
+}
+
+/* TITRES */
+h1,
+h2 {
+  font-family: var(--Nulshock);
+  font-size: 42px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--txt-color);
+}
+
+h2 {
+  color: white;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: var(--Nulshock);
+}
+
+.header_titles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* BARRE DE NAVIGATION */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--primary-color);
+  height: 300px;
+  margin: 30px;
+}
+
+.logo_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.h2_title_banner {
+  margin-left: 20rem;
+}
+
+.logo {
+  border-radius: 25px;
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.ancre-decoration {
+  border-radius: 25px;
+  border: solid 4px var(--secondary-color);
+  box-shadow: 4px 4px 20px var(--secondary-color);
+  color: var(--txt-color);
+  font-family: var(--Nulshock);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 25px;
+  margin: 30px;
+}
+
+hr {
+  border-top: 3px solid yellow;
+}
+
+.php-menu {
+  margin-left: 200px;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container_presentation {
+  margin: 30px;
+  text-align: center;
+}
+
+#container_presentation p {
+  margin-left: 60px;
+}
+
+/* ACCUEIL - ECRAN DE TELEVISION  */
+.tv-wrapper {
+  position: relative;
+  width: 600px;
+  aspect-ratio: 16/9;
+}
+
+.tv-image {
+  width: 100%;
+}
+
+.tv-video {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  width: 51%;
+  height: 56%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* FOOTER         */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background-color: #001115;
+  padding: 30px;
+}
+
+.ancre-footer {
+  font-family: var(--Roboto);
+  font-size: 26px;
+  color: white;
+}
+
+
+/* ESCAPE GAME */
+#room {
+  width: 80%;
+  height: 700px;
+  background-image: url("./images/main_room.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.object {
+  position: absolute;
+}
+
+#closed_door {
+  height: 600px;
+  width: 300px;
+  bottom: 90px;
+  right: 800px;
+}
+
+#key {
+  height: 95px;
+  width: 106px;
+  transform: rotate(47deg);
+  top: 580px;
+  left: 1000px;
+}
+
+#lock {
+  height: 50px;
+  width: 40px;
+  top: 330px;
+  left: 390px;
+}
+
+#padlock {
+  height: 75px;
+  width: 75px;
+  right: 790px;
+  top: 240px;
+}
+
+#letter {
+  height: 75px;
+  width: 125px;
+  left: 620px;
+  top: 390px;
+}
+
+#message-card {
+  right:40px;
+  top: 20px;
+
+}
+
+#escape {
+  left: 350px;
+  top: 100px;
+}
+
+#message-card,
+#escape {
+  display: none;
+  color: white;
+  border-radius: 1rem;
+  font-family: var(--Nulshock);
+  font-size: 16px;
+  padding: 30px;
+  text-align: center;
+  border: solid 5px var(--secondary-color);
+  box-shadow: 4px 4px 8px var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+#escape:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 20px var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
+#sound-icon {
+  height: 70px;
+  width: 70px;
+  bottom: 20px;
+  left: 50px;
+  border: var(--txt-color) solid 5px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px var(--primary-color);
+}
+
+#key:hover,
+#lock:hover,
+#padlock:hover,
+#letter:hover,
+#sound-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+
+/* FORMULAIRES */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: solid 5px var(--secondary-color);
+  box-shadow: 4px 4px 8px var(--secondary-color);
+  padding: 30px;
+  margin:30px;
+  border-radius: 5%;
+}
+
+.form-input {
+  width: 300px;
+  height: 2.5em;
+  font-family: var(--Roboto);
+}
+
+.textarea {
+  font-family: var(--Roboto);
+  width: 100%;
+  resize: vertical;
+}
+
+label {
+  font-family: var(--Roboto);
+  color: white;
+  font-size: 18px;
+}
+
+.button {
+  font-family: var(--Roboto);
+  color: var(--txt-color);
+  background-color: var(--primary-color);
+  border: solid 5px var(--secondary-color);
+  box-shadow: 4px 4px 8px var(--secondary-color);
+  border-radius: 1rem;
+  width: 140px;
+  padding: 15px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.main_button:hover {
+  animation: apparition 0.5s infinite;
+}
+
+/* ADMINISTRATEUR / ARTICLES    */
+.article_image {
+  height: 70px;
+  width: 70px;
+}
+
+.blog-article {
+  text-align: left;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  background-color: var(--secondary-color);
+  width: 80%;
+  border: solid 5px var(--secondary-color);
+  box-shadow: 4px 4px 8px var(--secondary-color);
+  border-radius: 1rem;
+  
+}
+
+.admin_article_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 5px white;
+  border-radius: 1rem;
+  padding: 30px;
+}
+
+.admin_form {
+  color: white;
+  font-size: 18px;
+  font-family: var(--Roboto);
+  border-collapse: collapse;
+  padding: 10px;
+  margin: 3rem;
+}
+
+.admin_article th,
+.admin_article td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.buttons_admin {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* ADMINISTRATEUR / ESCAPE GAME  */
+.admin_escape_game {
+  display: flex;
+  justify-content: center;
+}
+
+.suprised_Luma {
+  height: 540px;
+  width: 300px;
+  padding: 20px;
+}
+
+/* PAGE FOLLOW */
+.social_media {
+  height: 200px;
+  width: 200px;
+}
+
+.social_media:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  cursor: pointer; 
+
+}
+
+.section_follow {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  width: 40%;
+  padding: 20px;
+  border-radius: 50px;
+  border: solid 10px var(--secondary-color);
+  box-shadow: 4px 4px 20px var(--secondary-color);
+  margin: 50px;
+}
+
+/* FAQ */
+.faq_section, .faq_section h3, .faq_section p {
+  text-align: center;
+}
+
+.faq_section {
+  display: flex;
+
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.faq_item {
+  padding: 30px;
+}
+
+.contact_direction {
+  font-size: 18px;
+  margin: 50px;
+
+}
+
+.contact_direction a:hover  {
+  color: var(--secondary-color);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  nav {
+    height: 220px;
+  }
+  nav ul {
+    gap :0;
+  }
+
+.logo_banner {
+  display: flex;
+  justify-content: flex-start;
+}
+ .logo {
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  border: var(--secondary-color) solid 4px;
+ }
+
+  .titles_banner h1, .titles_banner h2, .nav_contact, .nav_connexion {
+    display: none;
+  }
+
+  .ancre-decoration {
+    padding: 10px;
+  }
+}
+
+.php-menu {
+  margin: 0;
+  display: flex;
+  justify-content:center;
+}
+
+.nav ul {
+  gap: 0 px;
+}
+
+footer ul {
+ gap: 30px;
+}
+.ancre-footer {
+  font-size: 16px;
+}
+
+.blog-article p {
+  font-size: 16px;
+}
+
+.blog-article h4 {
+  font-size: 18px;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 24px;
+  
+}
+
+/* ANIMATIONS */
+@keyframes chaos {
+  0% { opacity: 0; transform: translateX(0) rotate(0); }
+  30% { transform: translateX(10px) rotate(-1deg); }
+  60% { transform: translateX(-10px) rotate(2deg); }
+  100% { opacity: 1; transform: translateX(0) rotate(0); }
+}
+
+@keyframes apparition {
+  from { transform: translate(-300px, -300px); }
+  to { transform: translate(0, 0); }
+}
+
+
